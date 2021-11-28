@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui">
+ 
+     <h:head>
+     
+ 
+     </h:head>
+ 
+     <h:body>
+ 
+         <h:form>
+          <h:panelGrid columns="2">
+            	<p:outputLabel value="code"></p:outputLabel>
+            	<p:inputText value="#{mBArticle.article.code}"></p:inputText>
+            	
+            	<p:outputLabel value="designation"></p:outputLabel>
+            	<p:inputText value="#{mBArticle.article.designation}"></p:inputText>
+            	
+            	<p:outputLabel value="marge"></p:outputLabel>
+            	<p:inputText value="#{mBArticle.article.marge}"></p:inputText>
+            	
+            	<p:outputLabel value="prixHT"></p:outputLabel>
+            	<p:inputText value="#{mBArticle.article.prixHT}"></p:inputText>
+            	
+            	<p:outputLabel value="remise"></p:outputLabel>
+            	<p:inputText value="#{mBArticle.article.remise}"></p:inputText>
+            	
+            	<p:outputLabel value="tva"></p:outputLabel>
+            	<p:inputText value="#{mBArticle.article.tva}"></p:inputText>
+         		<p:commandButton value="ajouter" action="#{mBArticle.inserer}"></p:commandButton>
+         </h:panelGrid>
+ </h:form>
+     </h:body>
+</html>
